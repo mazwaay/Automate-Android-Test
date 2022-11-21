@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Regression Tests,,,,2022-11-22 00:12:37,2022-11-22 00:12:54,17.154s,PASSED
+,,,,,,,
+Test Cases/Verify Correct Alarm Message,,"- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Click ""START ALARM SERVICE"" and click ""STOP ALARM SERVICE"", verify alert show is correct",,2022-11-22 00:12:37,2022-11-22 00:12:54,16.753s,PASSED
+"comment(""Story: Verify correct alarm message"")",,,,2022-11-22 00:12:38,2022-11-22 00:12:38,0.078s,PASSED
+"comment(""Given that user has started an application"")",,,,2022-11-22 00:12:38,2022-11-22 00:12:38,0.004s,PASSED
+"appPath = relativeToAbsolutePath(G_AndroidApp, getProjectDir())",,Get full directory's path of android application,,2022-11-22 00:12:38,2022-11-22 00:12:38,0.313s,PASSED
+"startApplication(appPath, false)",,,,2022-11-22 00:12:38,2022-11-22 00:12:49,11.198s,PASSED
+"comment(""And he navigates the application to Activity form"")",,,,2022-11-22 00:12:49,2022-11-22 00:12:49,0.003s,PASSED
+"tap(findTestObject(""Application/android.widget.TextView - App""), 10)",,,,2022-11-22 00:12:49,2022-11-22 00:12:50,0.530s,PASSED
+"tap(findTestObject(""Application/App/android.widget.TextView-Activity""), 10)",,,,2022-11-22 00:12:50,2022-11-22 00:12:51,1.181s,PASSED
+"comment(""When he taps on the Custom Dialog button"")",,,,2022-11-22 00:12:51,2022-11-22 00:12:51,0.003s,PASSED
+"tap(findTestObject(""Application/App/Activity/android.widget.TextView-Custom Dialog""), 10)",,,,2022-11-22 00:12:51,2022-11-22 00:12:52,1.161s,PASSED
+"message = getText(findTestObject(""Application/App/Activity/Custom Dialog/android.widget.TextViewCustomDialog""), 10)",,Get displayed message on the dialog,,2022-11-22 00:12:52,2022-11-22 00:12:54,1.465s,PASSED
+"comment(""Then the correct dialog message should be displayed"")",,,,2022-11-22 00:12:54,2022-11-22 00:12:54,0.002s,PASSED
+"verifyEqual(message, ""Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame."")",,,,2022-11-22 00:12:54,2022-11-22 00:12:54,0.015s,PASSED
+closeApplication(),,,,2022-11-22 00:12:54,2022-11-22 00:12:54,0.373s,PASSED

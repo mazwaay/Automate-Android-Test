@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Regression Tests" time="17.154" tests="1" failures="0" errors="0">
+   <testsuite name="Regression Tests" tests="1" failures="0" errors="0" time="17.154" skipped="0" timestamp="2022-11-22 00:12:37" hostname="Mazway - DESKTOP-NTMPTGI" id="Test Suites/Regression Tests">
+      <properties>
+         <property name="deviceName" value="emulator-5554 (Android SDK built for x86 - Android 8.0.0)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Mazway\\Documents\\QA Engineer\\Katalon Sample Project\\mobileTest\\Reports\\20221122_001226\\Regression Tests\\20221122_001226"/>
+         <property name="logFiles" value="C:\\Users\\Mazway\\Documents\\QA Engineer\\Katalon Sample Project\\mobileTest\\Reports\\20221122_001226\\Regression Tests\\20221122_001226\\appium.log, C:\\Users\\Mazway\\Documents\\QA Engineer\\Katalon Sample Project\\mobileTest\\Reports\\20221122_001226\\Regression Tests\\20221122_001226\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Mazway - DESKTOP-NTMPTGI"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="appiumServerStatus" value="{&quot;value&quot;:{&quot;build&quot;:{&quot;version&quot;:&quot;1.22.3&quot;}},&quot;sessionId&quot;:null,&quot;status&quot;:0}"/>
+         <property name="katalonVersion" value="8.5.2.208"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.22.3"/>
+         <property name="deviceModel" value="Android SDK built for x86"/>
+         <property name="hostAddress" value="10.255.2.173"/>
+         <property name="deviceManufacturer" value="Google"/>
+         <property name="deviceId" value="emulator-5554"/>
+         <property name="deviceName" value="emulator-5554 (Android SDK built for x86 - Android 8.0.0)"/>
+         <property name="deviceOSVersion" value="8.0.0"/>
+      </properties>
+      <testcase name="Test Cases/Verify Correct Alarm Message" time="16.753" classname="Test Cases/Verify Correct Alarm Message" status="PASSED">
+         <system-out><![CDATA[2022-11-22 00:12:37 - [TEST_CASE][PASSED] - Test Cases/Verify Correct Alarm Message: Test Cases/Verify Correct Alarm Message
+
+2022-11-22 00:12:38 - [TEST_STEP][PASSED] - comment("Story: Verify correct alarm message"): Story: Verify correct alarm message
+
+2022-11-22 00:12:38 - [MESSAGE][INFO] - Story: Verify correct alarm message
+
+2022-11-22 00:12:38 - [TEST_STEP][PASSED] - comment("Given that user has started an application"): Given that user has started an application
+
+2022-11-22 00:12:38 - [MESSAGE][INFO] - Given that user has started an application
+
+2022-11-22 00:12:38 - [TEST_STEP][PASSED] - appPath = relativeToAbsolutePath(G_AndroidApp, getProjectDir()): null
+
+2022-11-22 00:12:38 - [TEST_STEP][PASSED] - startApplication(appPath, false): Started app at: 'C:\Users\Mazway\Documents\QA Engineer\Katalon Sample Project\mobileTest\androidapp\APIDemos.apk'
+
+2022-11-22 00:12:38 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+2022-11-22 00:12:40 - [MESSAGE][INFO] - Appium server started on port 64,944
+
+2022-11-22 00:12:49 - [MESSAGE][PASSED] - Started app at: 'C:\Users\Mazway\Documents\QA Engineer\Katalon Sample Project\mobileTest\androidapp\APIDemos.apk'
+
+2022-11-22 00:12:49 - [TEST_STEP][PASSED] - comment("And he navigates the application to Activity form"): And he navigates the application to Activity form
+
+2022-11-22 00:12:49 - [MESSAGE][INFO] - And he navigates the application to Activity form
+
+2022-11-22 00:12:49 - [TEST_STEP][PASSED] - tap(findTestObject("Application/android.widget.TextView - App"), 10): Tapped on element 'Object Repository/Application/android.widget.TextView - App'
+
+2022-11-22 00:12:50 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Application/android.widget.TextView - App'
+
+2022-11-22 00:12:50 - [TEST_STEP][PASSED] - tap(findTestObject("Application/App/android.widget.TextView-Activity"), 10): Tapped on element 'Object Repository/Application/App/android.widget.TextView-Activity'
+
+2022-11-22 00:12:51 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Application/App/android.widget.TextView-Activity'
+
+2022-11-22 00:12:51 - [TEST_STEP][PASSED] - comment("When he taps on the Custom Dialog button"): When he taps on the Custom Dialog button
+
+2022-11-22 00:12:51 - [MESSAGE][INFO] - When he taps on the Custom Dialog button
+
+2022-11-22 00:12:51 - [TEST_STEP][PASSED] - tap(findTestObject("Application/App/Activity/android.widget.TextView-Custom Dialog"), 10): Tapped on element 'Object Repository/Application/App/Activity/android.widget.TextView-Custom Dialog'
+
+2022-11-22 00:12:52 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Application/App/Activity/android.widget.TextView-Custom Dialog'
+
+2022-11-22 00:12:52 - [TEST_STEP][PASSED] - message = getText(findTestObject("Application/App/Activity/Custom Dialog/android.widget.TextViewCustomDialog"), 10): Text of element 'Object Repository/Application/App/Activity/Custom Dialog/android.widget.TextViewCustomDialog' is: 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.'
+
+2022-11-22 00:12:54 - [MESSAGE][PASSED] - Text of element 'Object Repository/Application/App/Activity/Custom Dialog/android.widget.TextViewCustomDialog' is: 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.'
+
+2022-11-22 00:12:54 - [TEST_STEP][PASSED] - comment("Then the correct dialog message should be displayed"): Then the correct dialog message should be displayed
+
+2022-11-22 00:12:54 - [MESSAGE][INFO] - Then the correct dialog message should be displayed
+
+2022-11-22 00:12:54 - [TEST_STEP][PASSED] - verifyEqual(message, "Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame."): Actual object 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.' and expected object 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.' are equal
+
+2022-11-22 00:12:54 - [MESSAGE][PASSED] - Actual object 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.' and expected object 'Example of how you can use a custom Theme.Dialog theme to make an activity that looks like a customized dialog, here with an ugly frame.' are equal
+
+2022-11-22 00:12:54 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+2022-11-22 00:12:54 - [MESSAGE][PASSED] - Close app successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-11-22 00:12:37 - [TEST_SUITE][PASSED] - Regression Tests: Test Cases/Verify Correct Alarm Message]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
